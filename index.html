@@ -83,7 +83,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
       }).addTo(map);
     });
 
-   $.getJSON("Libraries.json", function(WC) {
+   $.getJSON("Libraries.json", function(LP) {
       L.geoJson(WC, {
         pointToLayer: function(feature, latlng) {
           return L.circleMarker(latlng, {
